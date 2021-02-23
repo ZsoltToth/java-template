@@ -42,6 +42,18 @@ class PrimeServiceImplTest {
     }
 
     @Test
+    void shouldBePrimeTwo() {
+        // given
+        final int TWO = 2;
+        final boolean expected = true;
+        // when
+        final boolean actual = primeService.isPrime(TWO);
+        // then
+        assertThat(actual).isEqualTo(expected);
+    }
+
+
+    @Test
     void shouldNotBePrimeOne() {
         // given
         final int ONE = 1;
