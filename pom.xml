@@ -131,7 +131,11 @@
                         <configuration>
                             <rules>
                                 <rule>
-                                    <element>PACKAGE</element>
+                                    <element>BUNDLE</element>
+                                    <!--                  <element>PACKAGE</element>-->
+                                    <!--                  <element>CLASS</element>-->
+                                    <!--                  <element>SOURCEFILE</element>-->
+                                    <!--                  <element>METHOD</element>-->
                                     <limits>
                                         <limit>
                                             <counter>LINE</counter>
