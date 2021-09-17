@@ -1,5 +1,6 @@
 package hu.iit.uni.miskolc.advanced.java.service;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -10,6 +11,7 @@ class PrimeServiceImplTest {
 
     private PrimeServiceImpl primeService = new PrimeServiceImpl();
 
+    @Disabled
     @Test
     void isNotPrime() {
         // given
@@ -21,6 +23,7 @@ class PrimeServiceImplTest {
         assertThat(actual).isEqualTo(expected);
     }
 
+    @Disabled
     @Test
     void isNotPrimeUglySolution() {
         // given
@@ -30,6 +33,7 @@ class PrimeServiceImplTest {
         assertThat(result).isEqualTo(false);
     }
 
+    @Disabled
     @Test
     void isPrime() {
         // given
@@ -41,6 +45,7 @@ class PrimeServiceImplTest {
         assertThat(actual).isEqualTo(expected);
     }
 
+    @Disabled
     @Test
     void shouldBePrimeTwo() {
         // given
@@ -53,6 +58,7 @@ class PrimeServiceImplTest {
     }
 
 
+    @Disabled
     @Test
     void shouldNotBePrimeOne() {
         // given
@@ -64,6 +70,7 @@ class PrimeServiceImplTest {
         assertThat(actual).isEqualTo(expected);
     }
 
+    @Disabled
     @Test
     void shouldBeFalseForZero() {
         // given
@@ -75,6 +82,7 @@ class PrimeServiceImplTest {
         assertThat(actual).isEqualTo(expected);
     }
 
+    @Disabled
     @ParameterizedTest
     @CsvSource(value = {
             "-1", "-4", "-1000"
