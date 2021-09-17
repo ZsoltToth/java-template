@@ -1,5 +1,8 @@
 package hu.iit.uni.miskolc.advanced.java.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class PrimeServiceImpl implements PrimeService {
 
     @Override
