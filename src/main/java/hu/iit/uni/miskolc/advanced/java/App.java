@@ -1,7 +1,6 @@
 package hu.iit.uni.miskolc.advanced.java;
 
 import hu.iit.uni.miskolc.advanced.java.service.PrimeService;
-import hu.iit.uni.miskolc.advanced.java.service.PrimeServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
