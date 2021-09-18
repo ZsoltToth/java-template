@@ -28,5 +28,9 @@ public class App implements CommandLineRunner {
         System.out.println(service.isPrime(5));
 
         Arrays.stream(solver.solve(1, -1, -6)).forEach(System.out::println);
+
+        QuadraticSolver.Equation equation = new QuadraticSolver.Equation(1, -1, -6);
+        QuadraticSolver.Solution solution = solver.solve(equation);
+        System.out.println(String.format("%f, %f", solution.getX1(), solution.getX2()));
     }
 }
